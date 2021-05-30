@@ -1,0 +1,31 @@
+<!doctype html> 
+<html>
+    <head>
+        <meta charset = "utf8">
+        <title>Index</title>
+    </head>
+        <body>      
+            <div>
+                <form action="/action_page.php" target="_blank" method="POST">
+                    <p>
+                    <input type="text" id="name" class="name" name="name" placeholder="Ваше имя..." maxlength="20" required/>  </p>
+                    <p>
+                    <input type="tel" id="tel" class="tel" name="tel" placeholder="Ваш телефон..." maxlength="20" required/> </p> 
+                    <p>
+                    <input type="email" id="email" class="email" name="email" placeholder="Ваш e-mail..." maxlength="40"/> </p>
+                    <textarea id="message" class="message" name="message" placeholder="Ваши пожелания..." maxlength="1000"></textarea>
+                    <p>
+                    <label for="sites">Выберите тип сайта:</label></p>
+                    <p>
+                    <select name="sites" id="sites" id="sites" class="sites">
+                        <option value="onepage">Одностраничный</option>
+                        <option value="multipage">Многостраничный</option>
+                        <option value="eshop">Интернет-магазин</option>
+                        <option value="tilda">На Tilda</option>
+                      </select></p>
+                    <p>
+                    <button type="button" class="btn" name="btn" id="btn">Отправить</button></p>
+                </form>
+            </div>
+        </body>
+</html>

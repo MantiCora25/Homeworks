@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgba(63, 61, 61, 0.5);
+        
+        
+    }
+    .modal_window{
+        position: absolute;
+        background: rgba(40, 0, 27, 0.6);
+        border-radius: 4%;
+        width: 300px;
+        height: 300px;
+        border: 2px solid;
+        left: 50%;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -150px;
+    
+    }
+    .header{
+        width: 80%;
+        text-align: center;
+        margin-top: 15px;   
+        margin-bottom: 20px;
+        margin-left: 10%;
+    }
+    .field_name{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        border-radius: 9%;
+    }
+    .field_email{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        border-radius: 9%;
+    }
+    .field_comment{
+        width: 80.5%;
+        height: 25%;
+        margin-left: 10%;
+        font: 400 13.3333px Arial;
+        resize: none;
+        border-radius: 3%;
+        margin-bottom: 25px;
+    }
+    .submit_button{
+        width: 40%;
+        margin-left: 30%;
+        border-radius: 9%;
+    }
+    .close_button{
+        float: right;
+        margin-right: 2%;
+        font-family: Verdana, sans-serif;
+        display: block;
+    }
+    .close_button:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+   <div class="modal_window">
+       <div class="close_button">x</div>
+      <h1 class="header">Registration</h1>
+      <input type="text" class="field_name" placeholder="Your name here" maxlength="40"> 
+      <input type="text" class="field_email" placeholder="Your e-mail here" maxlength="40"> 
+      <textarea class="field_comment" placeholder="Your comment here" maxlength="1000"></textarea>
+      <button class="submit_button">Submit</button>
+
+  </div>
+    
+</body>
+</html>

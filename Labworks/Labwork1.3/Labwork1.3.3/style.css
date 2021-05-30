@@ -1,0 +1,32 @@
+#container{
+    width: 500px;
+}
+#header{
+    background-color:lightskyblue;
+    text-align:center;
+}
+#headline{
+    margin-bottom:0;
+}
+
+#menu{
+    background-color:skyblue;
+    height:200px;
+    width:100px;
+    float:left;
+    text-align:center;
+    
+}
+#content{
+    background-color: lightblue;
+    height:200px;
+    width:400px;
+    float:left;
+    text-align:center;
+ 
+}
+#footer{
+    background-color:lightskyblue;
+    clear:both;
+    text-align:center;
+}

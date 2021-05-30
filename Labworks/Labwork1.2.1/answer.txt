@@ -1,0 +1,6 @@
+In the most basic terms, a grid is a structure comprising a series of lines (vertical or intersecting) 
+that divide a page into columns or modules.
+
+The 960 Grid System is an effort to streamline web development workflow by providing commonly used dimensions, based on a width of 960 pixels.
+There are two variants: 12 and 16 columns, which can be used separately or in tandem.
+

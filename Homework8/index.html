@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .bg{
+        background:url(images/fon.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 200px 0px;
+    }
+    .block1{
+       float: left;
+       margin: 0;
+       width: 50%;
+    }
+    .block2{
+      float: left;
+       margin: 0;
+       width: 50%;
+    }
+    #head{
+     text-align: center;
+     text-transform: uppercase;
+    }
+    #paragraph{
+     text-transform: lowercase;
+     text-indent: 20px;
+    }
+    input{
+     width: 100%;
+    }
+    textarea{
+     width: 100%;  
+     resize: none; 
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <div class="block1">
+            <h2 id="head">Test...</h2>
+            <p id="paragraph">Test2...</p>
+        </div>  
+         
+        <div class="block2">
+            <form>
+                <label for="name">Ваше имя:</label><br>
+                <input type="text" id="name"><br>
+                <label for="phone">Ваш телефон:</label><br>
+                <input type="tel" id="phone"><br>
+                <label for="message">Ваше сообщение:</label><br>
+                <textarea id="message" placeholder="Ваше сообщение"></textarea><br>
+                <input type="submit" id="submit" placeholder="Отправить"><br>
+            </form>
+        </div>
+    </div> 
+</body>
+</html>

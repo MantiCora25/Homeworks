@@ -1,0 +1,16 @@
+User-agent *
+Host: https://site.com
+Allow: optimize                            // допустить
+Disallow: admin, avatar                    // запретить
+Sitemap: site.com/sitemap_html.xml         // карты для html, картинок, видео
+Sitemap: site.com/sitemap_images.xml
+Sitemap: site.com/sitemap_video.xml
+
+
+
+User-agent: Yandex                         // доступ открыт только для Yandex
+Host: https://site.com
+Allow: optimize                            // допустить
+Disallow: admin, avatar                    // запретить
+
+

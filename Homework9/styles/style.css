@@ -1,0 +1,20 @@
+
+
+
+.main ul.sub_menu li.item a.link-item {
+    color: red;
+    font-family: 'open_sansitalic';
+}
+.main ul.sub_menu li.item a.link-item:hover{
+    color:blue;
+    font-size: 120%;
+}
+
+.main ul.menu, .main ul.sub_menu{
+    color: rosybrown;
+    font-family: 'open_sanslight';
+}
+.main ul.menu:hover, .main ul.sub_menu:hover{
+    color:blue;
+    font-size: 130%;
+}
