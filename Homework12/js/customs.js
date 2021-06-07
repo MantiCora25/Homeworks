@@ -8,14 +8,14 @@ jQuery(document).ready(function () {
 		
 	slid.owlCarousel({
 		items: 1,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 6000,
 		autoplayHoverPause: false,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
 		nav: true,
-		navText: ['<', '>'],
+		navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
 		dots: false,
 		mouseDrag: true,
 		margin: 30,

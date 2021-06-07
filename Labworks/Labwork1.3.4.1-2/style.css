@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.header,
+.footer{
+    background-color: blueviolet;
+    width: 100%;
+    height: 20%;
+}
+
+.middle{
+    position: relative;
+   
+    width: 100%;
+    height: 60%;
+}
+
+.bg div.header button,
+.bg div.footer button{
+    background: blue;
+   
+    height: 40px;
+    width: 70px;
+    margin-top: 10px;
+    
+}
+
+.bg div.header button{
+     float: right;
+     margin-right: 15px;
+}
+
+
+.bg div.footer button{
+    float: left;
+    margin-left: 15px;
+}
+
+.frame{
+    position: absolute;
+    border: 2px solid blue; 
+    margin: auto;
+    width: 1350px;
+    height: 140px; 
+    top: 50%;
+    margin-top: -70px;
+    right: 50%;
+    margin-right: -675px;
+}
+
+.text{
+    background: yellow;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.bg div.middle div.frame  p button{
+    background: tomato;
+    
+}
+.bg div.middle div.frame button{
+    margin-left: 15px;
+    background: rgba(0, 0, 255, 0.1);
+}
