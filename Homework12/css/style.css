@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+.page{
+    padding-bottom: 150px;
+}
 body,
 html{
     height: 100%;

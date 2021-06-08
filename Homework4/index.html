@@ -4,9 +4,22 @@
         <meta charset = "utf8">
         <title>Index</title>
     </head>
+    <style>
+        .table_main,
+        th,
+        td{
+            border: 1px solid #000;
+        }
+        table.table_main{
+            border-collapse: collapse;
+        }
+        table.table_main tr:nth-child(odd){
+            background: red;
+        }
+    </style>
         <body>      
 
-            <table border="1" align="center" cellpadding="20" cellspacing="0">
+            <table class="table_main" border="1" align="center" cellpadding="20" cellspacing="0">
             <thead>
             <h2>Table</h2>
             </thead>
@@ -75,3 +88,16 @@
 
         </body>
 </html>
+
+footer{
+height: 100%;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100px;
+}
+for_page{
+    min-height : 100%;
+    position: relative;
+
+}
