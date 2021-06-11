@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.text-shadow p{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.text-shadow p:nth-child(1){
+    text-shadow: 15px 25px grey;
+}
+.text-shadow p:nth-child(2){
+    text-shadow: 15px 25px 3px grey;
+}
+.text-shadow p:nth-child(3){
+    text-shadow: -8px -8px 4px grey, 8px 8px 4px green;
+}
+.text-shadow p:nth-child(4){
+    color: yellow;
+    text-shadow: -1px -1px rgba(0,0,0,0.6);
+}
+.text-shadow p:nth-child(5){
+    color: yellow;
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
+}
+.text-shadow p:nth-child(6){
+    color: yellow;
+    text-shadow: 1px 0px black, 0 -1px black, 0 1px black, -1px 0 black;
+}
+.box-shadow div:nth-child(1){
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 30px 30px grey;
+    -moz-box-shadow: 30px 30px grey;
+    -o-box-shadow: 30px 30px grey;
+    box-shadow: 30px 30px grey;
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(2){
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 30px 30px 10px grey;
+    -moz-box-shadow: 30px 30px 10px grey;
+    -o-box-shadow: 30px 30px 10px grey;
+    box-shadow: 30px 30px 10px grey;
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(3){
+    border: 1px solid #000;
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: inset 3px 3px 10px blue, inset -3px -3px 10px red;
+    -moz-box-shadow: inset 3px 3px 10px blue, inset -3px -3px 10px red;
+    -o-box-shadow: inset 3px 3px 10px blue, inset -3px -3px 10px red;
+    box-shadow: inset 3px 3px 10px blue, inset -3px -3px 10px red;
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(4){
+    border: 1px solid #000;
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(to right, red, blue 50%, white 80%, red);
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(5){
+    border: 1px solid #000;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to bottom, red 33%, white 33%, white 66%, red 66%);
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(6){
+    border: 1px solid #000;
+    width: 300px;
+    height: 150px;
+    background: radial-gradient(circle, rgb(21, 182, 182) 0%, #0072a9 50%);
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(7){
+    border: 1px solid #000;
+    width: 300px;
+    height: 150px;
+    background: radial-gradient(circle at 10% 20%, rgb(35, 243, 243) 0%, #0072a9 15%);
+    margin-bottom: 50px;
+}
+.box-shadow div:nth-child(8){
+    border: 1px solid #000;
+    width: 300px;
+    height: 150px;
+    background: radial-gradient(circle, black 3%, white 13%, white 20%, green 25%);
+    margin-bottom: 50px;
+}
