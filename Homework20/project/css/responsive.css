@@ -1,0 +1,144 @@
+
+
+@media (max-width: 2500px){
+    .gallery a {
+        height: 391px;
+    }
+}
+@media (max-width: 2000px){
+    .gallery a {
+        height: 347px;
+    }
+    .bg-carousel-reviews{
+        height: 500px;
+    }
+}
+@media (max-width: 1800px){
+    .gallery a {
+        height: 326px;
+    }
+}
+@media (max-width: 1650px){
+    .gallery a {
+        height: 288px;
+    }
+}
+@media (max-width: 1480px){
+    .gallery a {
+        height: 260px;
+    }
+}
+@media (max-width: 1199px){
+    .owl-carousel-reviews{
+        padding: 85px 40px;
+    }
+}
+@media (max-width: 991px){
+    .owl-carousel-reviews{
+        display: none;
+        width: 100%;
+    }
+    .bg-carousel-reviews{
+        margin: 0 auto;
+    }
+    .box-team{
+        margin-bottom: 40px;
+    }
+    .gallery a {
+        width: 50%;
+    }
+    .baner{
+        padding-top: 203px;
+        padding-bottom: 110px;
+    }
+    .baner-text h1{
+        font-size: 50px;
+        line-height: 52px;
+        margin-bottom: 30px;
+    }
+    .box-text-baner{
+        margin-bottom: 30px;
+    }
+    .box-service-img img {
+        margin-left: 312px;  
+    }
+}
+@media (max-width: 767px){
+    .box-team{
+        max-width: 316px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .team{
+        padding: 60px;
+    }
+    .logo{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .header{
+        padding-top: 25px;
+    }
+    .baner{
+        top: -146px;
+    }
+    .nav-menu ul.menu{
+        justify-content: center;
+    }
+    .baner-text h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .box-text-baner{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .box-service-img img {
+        margin-left: 225px;   
+    }
+}
+@media (max-width: 600px){
+    .box-service-img img {
+        margin-left: 225px;
+    }
+    .gallery:nth-child(1),
+    .gallery:nth-child(5){
+        margin-left: auto;
+}
+    .gallery:nth-child(4),
+    .gallery:nth-child(8){
+        margin-right: auto;
+}
+    .gallery a {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px){
+    .box-service-img img {
+        margin-left: 182px;
+    }
+}
+@media (max-width: 470px){
+    .nav-menu ul.menu li a{
+        color: #fff;
+        font-size: 11px;
+        font-family: 'ralewayregular';
+        padding-left: 9px;
+    }
+    .separator{
+        padding-bottom: 11px;
+    }
+    .baner{
+        padding-top: 174px;
+        padding-bottom: 58px;
+    }
+    .baner-text h1{
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 17px;
+    }
+}
