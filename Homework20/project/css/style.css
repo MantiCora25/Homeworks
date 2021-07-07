@@ -230,8 +230,9 @@ img{
 }
 .owl-carousel-reviews{
     background: #53354a;
-    padding: 106px 76px;
+    padding: 85px 76px;
     width: 50%;
+  
 }
 .text-owl-carousel{
     font-family: 'cardoitalic';
@@ -332,7 +333,7 @@ img{
     margin-top: 20px;
     text-align: center;
     font-family: 'raleway';
-    font-size: 10px;
+    font-size: 14px;
 }
 .footer-share-icon-box {
     margin-top: 20px;
@@ -358,6 +359,7 @@ img{
     margin-right: 4px;   
 }
 .footer-lower-stripe{
+    padding-top: 20px;
     margin: 0 auto;
     text-align: center;
     color: #707177;
