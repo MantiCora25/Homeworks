@@ -1,0 +1,20 @@
+body{
+    background: -webkit-linear-gradient(left,red 0%, red 20%, yellow 20%, yellow 40%, violet 40%, violet 60%, white 60%, white 80%, green 80%);
+}
+.button{
+    margin-left: 500px;
+    font-size: 0;
+    text-decoration: none;
+}
+.button:before{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 200px;
+    content: 'Кнопка';
+    font-size: 20px;
+    background: violet;
+    border: green 1px solid;
+    padding: 10px;
+    left: 5px;
+    top: 75px;
+}
