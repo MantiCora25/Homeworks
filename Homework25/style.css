@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    position: relative;
+    margin: 0 auto;
+    width: 740px;
+    height: 740px;
+    background-image: url("img.jpg");
+    object-fit: cover;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+.button{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 90px;
+    padding: 20px;
+    background: yellowgreen ;
+    border-radius: 15px;
+    border: khaki 6px solid;
+}
+.text{
+    width: 700px;
+    height: 350px;
+    background: rgba(238, 238, 228, 0.5);
+    margin: 0 auto;
+    margin-top: 250px;
+    text-align: center;
+    font-size: 30px;
+}
