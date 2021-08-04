@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Task 1-->
+    <h2>Task1</h2>
+    <p id="textblock1"></p>
+    <button id="button" onclick="buttonFunc()">Open text</button>
+
+    <h2>Task2</h2>
+    <p id="array"></p>
+
+    <h2>Task4</h2>
+    <p id="maxblock">(5, 80, -44, 120,60,-5, 206)<br></p>
+    <button id="buttonMax" onclick="max()">Get the max number</button>
+</body>
+<script>
+    const textblock = document.getElementById('textblock1');
+    const button = document.getElementById('button');
+    const arrBlock = document.getElementById('array');
+
+
+
+    function buttonFunc() {
+        if (button.innerText === "Open text") {
+            textblock.innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum.`
+            textblock.style.height = "110px"
+            button.innerText = "Hide text"
+        } else {
+            textblock.innerHTML = ``;
+            textblock.style.height = "40px";
+            button.innerText = "Open text"
+        }
+    }
+    function max(){
+		const arrMax = [5, 80, -44, 120,60,-5, 206];
+		document.querySelector('#maxblock').innerHTML += "Max number is " + Math.max.apply(null, arrMax);
+	}
+    
+    /*Task 2*/
+    let arr = {
+        "key1" : "Roosevelt",
+        "key2" : "Churchill",
+        "key3" : "Stalin",
+    }
+    arrBlock.innerHTML += `Array : <br> America : ${arr["key1"]} <br> The United Kingdom : ${arr["key2"]} <br> The USSR : ${arr["key3"]} <br> <br>`;
+    arr["key4"] = "Hitler"; 
+    arr["key5"] = "Mussolini"; 
+
+    arrBlock.innerHTML += `Array(2 more values) : <br> America : ${arr["key1"]} <br> The United Kingdom : ${arr["key2"]} <br> The USSR : ${arr["key3"]} <br> Third Reich : ${arr["key4"]} <br> Italia : ${arr["key5"]} <br> <br>`;
+    arrBlock.innerHTML += "Length : " + Object.keys(arr).length + '<br><br>';
+
+    delete arr["key2"];
+    delete arr["key5"];
+    arrBlock.innerHTML += `Array(2 values deleted) : <br> America : ${arr["key1"]} <br> The United Kingdom : ${arr["key2"]} <br> The USSR : ${arr["key3"]} <br> Third Reich : ${arr["key4"]} <br> Italia : ${arr["key5"]} <br> <br>`
+
+
+</script>
+</html>
