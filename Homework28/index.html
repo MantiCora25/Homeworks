@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="area" id="area">
+
+    </div>
+</body>
+<script>
+    const area = document.getElementById("area");
+    let obj = {
+        firstName :"Maya",
+        lastName : "Dos",
+        language : " ",
+        name : " ",
+        nameDog : "Profi"
+    }
+    area.innerHTML += `What do we have at the beginning: <br>First Name : ${obj.firstName}<br> Last Name : ${obj.lastName}<br> Language : ${obj.language}<br> Name : ${obj.name}<br> Dogs name : ${obj.nameDog}<br><br>`
+
+    obj.language = "lang";
+    obj.name = "nameCat";
+    delete obj.nameDog;
+
+    area.innerHTML += `What do we have after all manipulations: <br>First Name : ${obj.firstName}<br> Last Name : ${obj.lastName}<br> Language : ${obj.language}<br> Name : ${obj.name}<br>`
+</script>
+</html>
