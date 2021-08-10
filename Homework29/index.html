@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="task1"></div>
+    <div class="task2"></div>
+
+</body>
+<script>
+    let task1 = document.querySelector('.task1');
+    task1.innerHTML += `<b>Task 1<b> <br>`
+    function lengthArr(){
+		task1.innerHTML += 'Length = ' + arguments.length + '<br> <br> <br>';
+	}
+	lengthArr(1,2,3,4,5,6,7,8);
+
+
+    const task2 = document.querySelector('.task2');
+    task2.innerHTML += `<b>Task 2<b> <br>`;
+    let Person = function(name, surname, age, lang, country, isMarried, hasChildren, email, phone){
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.lang = lang;
+        this.country = country;
+        this.isMarried = isMarried;
+        this.hasChildren = hasChildren;
+        this.email = email;
+        this.phone = phone;
+        this.sayHello = function(){
+            return task2.innerHTML += `Name : ${this.name} <br> Last name : ${this.surname} <br> Age : ${this.age} <br> Language : ${this.lang} <br> Country : ${this.country} <br> Married : ${this.isMarried} <br> Children : ${this.hasChildren} <br> E-mail : ${this.email} <br> Phone : ${this.phone} <br><br>`;
+        }
+    }
+
+    let johnDoe = new Person('John', 'Doe', '25', 'English', 'the USA', 'true', '2', 'john-doe@hmail.com', '+10554878466554');
+    let annJohansson = new Person('Ann', 'Johansson', '23', 'Danish', 'Denmark', 'false', '0', 'johansson.a@hmail.com', '+457575356313235');
+
+    johnDoe.sayHello();
+    annJohansson.sayHello();
+</script>
+</html>
