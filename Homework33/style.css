@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.container{
+    width: 200px;
+}
+.frontImg,
+.backImg {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    float: left;
+}
+
+.container:hover .frontImg {
+    margin-left: -220px;
+}
+
+.backImg {
+    margin-left: -400px;
+}
+
+.container:hover .backImg {
+    margin-left: 0;
+}
