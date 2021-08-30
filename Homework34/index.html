@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Homework 34</title>
+</head>
+	
+<style>
+	img{
+		width: 200px;
+        height: auto;
+        max-width: 100%;
+	}
+	.div{
+		font-size: 20px;
+		font-weight: bold;
+	}
+</style>
+
+<body>
+	<img src="images/boat.jpg" alt="" id="image" width="200px">
+</body>
+	
+<script>
+	let div = document.createElement('div');
+	div.className = 'div';
+	div.innerHTML = 'Текст';
+	
+	image.onmouseover = function() {
+		this.src = 'images/boat_two.jpeg';
+	};
+	image.onmouseout = function() {
+		this.remove();
+		document.body.append(div);
+	};
+</script>
+	
+</html>
