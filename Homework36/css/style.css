@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body,
+html{
+	height: 100%;
+}
+.for_page{
+	min-height: 100%;
+	position: relative;
+}
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+header{
+	height: 80px;
+	background: #0E53A9;
+	border-bottom: 30px solid #062C5C;
+	-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+	-moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.4);
+}
+.img-logo{
+	height: 80px;
+    border-radius: 50%;
+}
+header .container .row{
+	align-items: center;
+}
+.menu{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+	background: brown;
+}
+.menu-item:nth-child(2){
+	
+}
+.menu-item:nth-child(2) a{
+	font-size: 29px;
+    color: #000;
+    text-decoration: none;
+}
+.menu-item:nth-child(2) a:hover{
+	text-decoration: none;
+	text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+.menu-item button {
+	padding: 20px 35px;
+    background: darkred;
+    cursor: pointer;
+}
+.menu-item button:hover,
+.contacts button:hover{
+	background: #4652DD;
+}
+.menu-item button:active,
+.contacts button:active{
+	background: #093F84;
+}
+.menu-item button:focus,
+.contacts button:focus{
+	outline: none;
+}
+.contacts button{
+	padding: 5px 35px;
+	background: #6571F7;
+	border: 1px solid #0E53A9;
+	border-radius: 20px;
+	color: #fff;
+	box-shadow: 0px 3px 10px 3px rgba(255, 255, 255, 0.3);
+	cursor: pointer;
+}
+.contacts input,
+.contacts textarea,
+.contacts label,
+.contacts button{
+	display: block;
+	margin: 10px auto;
+	width: 70%;
+	resize: none;
+}
+.modalWindow{
+	position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 15%;
+    margin-left: -200px;
+    width: 400px;
+    display: none;
+    text-align: center;
+    padding: 45px 0;
+    background: #fff;
+}
+.modalWindow h2{
+	font-size: 24px;
+}
+#modalClose{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+label:hover{
+	opacity: 0.9;
+	cursor: pointer;
+}
+#modalClose:hover{
+	opacity: 0.7;
+}
+.contacts #textarea{
+	display: none;
+}
+.myFade{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}

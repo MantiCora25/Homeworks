@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div-before {
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        background: cornsilk;
+        float: left;
+    }
+    #div-after {
+        display: inline-block;
+        width: 300px;
+        height: 200px;
+        background: cornsilk;
+        float: right;
+    }
+    #btn{
+        margin-top: 100px;
+        margin-left: 350px;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="div-before"></div>
+        <div id="div-after"></div>
+    </div>
+    <button id="btn" onclick="filter(websites)">Отфильтровать</button>
+</body>
+<script>
+    let websites = `
+    https://rg.ru/
+    https://medmass.com.ua/
+    https://coderoad.ru/
+    https://ru.sweden.se/
+    https://booking.blablacar.com.ua/
+    https://www.notion.so/
+    https://docs.google.com/
+    https://www.google.com.ua/
+    https://mail.google.com/
+    https://soundcloud.com/
+    https://github.com/
+    https://www.msn.com/
+    https://www.maxi-mir.ru/
+    https://objor.com/
+    https://www.dobrobut.com/
+    `;
+
+    const beforeBlock = document.getElementById('div-before');
+    const afterBlock = document.getElementById('div-after');
+
+    beforeBlock.innerHTML = websites;
+
+    function filter(value){
+        afterBlock.innerHTML = value.replace(/https:\/\//g, "").replace(/\//g, "");
+       
+    }
+
+    /*filter(websites);*/
+</script>
+</html>
