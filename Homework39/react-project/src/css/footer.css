@@ -1,0 +1,37 @@
+*{
+    overflow-x: hidden;
+}
+
+.footer-main{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #a9a9a9;
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 12%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right{
+    /*display: inline-block;*/
+    margin: auto;
+}
+
+.left-headline, .center-headline, .right-headline{
+    text-transform: uppercase;
+}
+
+.left-text, .right-text, .center-phones, .center-mail{
+   font-size: 13px;
+}
+
+.right-text, .right-text{
+    max-width: 250px;
+    text-align: justify;
+}

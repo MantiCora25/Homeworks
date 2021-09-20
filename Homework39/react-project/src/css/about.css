@@ -1,0 +1,23 @@
+.about-main-block{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 100px;
+}
+.about-img-block {
+    width: 950px;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+.about-img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+.about-text-block{
+    margin: 0 auto;
+    text-align: justify;
+    max-width: 950px;
+    font-size: 21px;
+    line-height: 30px;
+    color: #444444
+}
