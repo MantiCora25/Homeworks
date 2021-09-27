@@ -1,0 +1,57 @@
+@green : rgb(115, 255, 69);
+@yellow : rgb(213, 216, 49);
+@50 : 50px;
+@45 : 45px;
+
+//task1
+.block1{
+    display: inline-block;
+    width: @50;
+    height: @50;
+    background: @green;
+}
+
+.block2{
+    display: inline-block;
+    width: @45;
+    height: @45;
+    background: @yellow;
+}
+
+//task2
+.block(@radius : 10px){
+    display: inline-block;
+    width: @45;
+    height: @45;
+    background: @yellow;
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+
+.block3{
+   .block2;
+}
+
+.block4{
+    .block(40px);
+}
+
+//task3
+.block5{
+    .block1;
+        &:hover {
+            background: red;
+        }
+}
+
+.block6{
+    .block1;
+        span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: @yellow;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+}
